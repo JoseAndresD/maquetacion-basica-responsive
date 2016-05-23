@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	font-family: "kaushanscript-regular-webfont";
+	src: url("../fonts/kaushanscript-regular-webfont.eot");
+	src: url("../fonts/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/kaushanscript-regular-webfont.woff") format("woff"),
+		url("../fonts/kaushanscript-regular-webfont.ttf") format("truetype"),
+		url("../fonts/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	background: #212121  url("../img/fondo.jpg");
+	color: #FFF;
+	font-family: "kaushanscript-regular-webfont";
+	/*las fuentes que no son seguras ya que no están grabadas en el ordenador, se ponen entre comillas las truefonts
+	no van entre comillas*/
+	font-size: 2em;
+	/*hay cuatro tipos de unidad para anchos de fuentes (elementos)
+	Pixeles: porcentaje mínimo es 16px
+	Puntos: es igual a 12pt
+	Porcentaje: 100%
+	Em: es el ancho de la letra M mayúscula, porque es la letra más ancha
+	16px=12pt=100%=1em
+	*/
+}
+
+h1{
+	color: #F60;
+	margin: 0.25em auto;
+	/*modelo de caja, margen entre la pagina y los elementos o entre los elementos, auto es para que se centre*/
+	text-align: center;
+	text-shadow: 10px 5px 10px rgba(255,255,255,0.5);
+	/*text-shadow tiene cuatro parámetros: distancia respecto al texto eje X, respecto a Y, blur (efecto desenfoque),formato de transparencia.*/
+}
+
+header, nav, footer{
+	background: #1E6381;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	/*en lugar de utilizar width y high se usa max-width para tamañao de cualquier dispositivo*/
+	text-align: center;
+}
+section#contenedor{
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0;
+	text-align: center;
+}
+
+section#principal, aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display: inline-block;
+	/*display atributo como se va a mostrar la disposición de los elementos (linea o bloque) antes se usaba con el atributo "float"*/
+	margin: 0.25em auto;
+	max-width: 960px;
+	min-height: 200px;
+	padding: 0.25em;
+	text-align: center;
+	vertical-align: top;
+	/*para centrar verticalmente al section y aside*/
+	width:65%;
+}
+
+article{
+	background: #011E30;
+	border-radius: 0.5em;
+	min-height: 140px;
+	padding: 0.25em;
+	
+
+}
+
+
+aside{
+	width:30%
+}
+
+
+
